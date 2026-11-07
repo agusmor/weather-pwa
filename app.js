@@ -10,7 +10,7 @@ fetch(url)
     document.getElementById("out").textContent = JSON.stringify(data, null, 2);
   });
 
-const chart = document.getElementById('myChart');
+const chart = document.getElementById('testChart');
 new Chart(chart, {
   type: 'bar',
   data: {
