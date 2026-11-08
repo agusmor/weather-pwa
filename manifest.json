@@ -1,5 +1,5 @@
 {
-  "name": "Concordia Weather",
+  "name": "Clima Concordia",
   "short_name": "Weather",
   "start_url": "./index.html",
   "display": "standalone",
