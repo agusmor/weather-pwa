@@ -1,4 +1,4 @@
-const CACHE = "weather-v3";
+const CACHE = "weather-v5";
 const FILES = ["./", "./index.html", "./app.js", "./manifest.json"];
 
 self.addEventListener("install", e => {

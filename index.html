@@ -4,27 +4,21 @@
 <head>
     <meta charset="UTF-8"> <!-- Character set -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For responsive display -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
     <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.6.1/chart.min.js" integrity="sha512-TTuOWSRAsUsJewIrDggWEFWinICEPrQQmXnvOcUBR1Pr6OolASB0EVdWpaV4Kx2d3XZpLenM2P2bM966S+bpww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.6.1/dist/chart.umd.min.js " defer></script>
     <script src="app.js" defer></script>
-    <title>Basic HTML Template</title>
+    <title>Concordia</title>
 </head>
 <body>
 
-    <!-- Header section -->
-    <header>
-        <h1>Weather PWA</h1>
-    </header>
-
-    <!-- Main content -->
-    <div>
-        <canvas id="testChart"></canvas>
-    </div>
-    <pre id="out"></pre>
-
+    <div id="week-container" class="card-container"></div>
+    <div id="today-container" class="card-container"></div>
 </body>
 </html>
