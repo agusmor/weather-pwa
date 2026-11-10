@@ -97,8 +97,6 @@ function populate_week() {
   return Promise.all([week_json, week_wind_json])
     .then(([week, wind]) => {
       const w = week.daily, g = wind.daily;
-      console.log(w)
-      console.log(g)
 
       w.time.forEach((date, i) => {
         add_card(
@@ -111,7 +109,7 @@ function populate_week() {
             w.precipitation_probability_max[i]
           ),
           `${windArrow(g.wind_direction_10m_dominant[i])} ` +
-          `${g.wind_speed_10m_max[i]} km/h<br>(${g.wind_gusts_10m_max[i]}) km/h`,
+          `${g.wind_speed_10m_max[i]} km/h<br>${g.wind_gusts_10m_max[i]} km/h`,
           `${w.relative_humidity_2m_mean?.[i] ?? "–"}%`,
           `${g.surface_pressure_mean[i]} hPa`,
           "week-container",
